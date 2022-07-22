@@ -95,8 +95,15 @@ function MovieImage() {
 
       const uploadImage = await sendFormData(data);
 
-      await sendImage(uploadImage._id, imageUpload);
-      alert(`Successful!!!`);
+      const resultData = await sendImage(
+        uploadImage._id,
+        imageUpload
+      );
+
+      if (resultData) {
+        alert(`Successful!!!`);
+      }
+
       setIsLoading(false);
       navigate("/");
     } catch (e) {
@@ -107,7 +114,9 @@ function MovieImage() {
 
   return (
     <main>
-      <Sidebar />
+      <div className='sidebar'>
+        <Sidebar />
+      </div>
       <div className='movieImage'>
         <form onSubmit={submitMovie}>
           <div>

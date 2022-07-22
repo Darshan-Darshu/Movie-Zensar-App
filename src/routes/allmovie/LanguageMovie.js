@@ -39,14 +39,20 @@ function LanguageMovie() {
             <>
               <h2>{params.language}</h2>
               <div className='allmovie__images'>
-                {games &&
+                {games ? (
                   games.map((game, index) =>
                     params.language === game.language ? (
                       <Movie key={game._id} id={game._id} />
                     ) : (
                       ""
                     )
-                  )}
+                  )
+                ) : (
+                  <h1>
+                    Something went wrong!!!! sorry try again
+                    later
+                  </h1>
+                )}
               </div>
             </>
           )}

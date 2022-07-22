@@ -39,7 +39,7 @@ function LanguageMovie() {
             <>
               <h2>{params.production}</h2>
               <div className='allmovie__images'>
-                {games &&
+                {games ? (
                   games.map((game, index) =>
                     params.production ===
                     game.production ? (
@@ -47,7 +47,13 @@ function LanguageMovie() {
                     ) : (
                       ""
                     )
-                  )}
+                  )
+                ) : (
+                  <h1>
+                    Something went wrong!!!! sorry try again
+                    later
+                  </h1>
+                )}
               </div>
             </>
           )}

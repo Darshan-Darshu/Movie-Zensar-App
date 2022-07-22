@@ -42,10 +42,16 @@ function TopRated() {
             <>
               <h2>Top Rated</h2>
               <div className='allmovie__images'>
-                {games &&
+                {games ? (
                   games.map((game, index) => (
                     <Movie key={game._id} id={game._id} />
-                  ))}
+                  ))
+                ) : (
+                  <h1>
+                    Something went wrong!!!! sorry try again
+                    later
+                  </h1>
+                )}
               </div>
             </>
           )}

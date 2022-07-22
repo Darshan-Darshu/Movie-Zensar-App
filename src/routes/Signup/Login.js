@@ -37,7 +37,7 @@ function Login() {
       const userData = await response.json();
 
       if (userData.err) {
-        return alert(userData.err);
+        return alert("Check your email and password");
       }
 
       dispatch(login(userData.user));
