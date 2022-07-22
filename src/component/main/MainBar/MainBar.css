@@ -1,0 +1,97 @@
+.mainBar {
+  flex: 0.8;
+  margin: 10px 30px;
+  overflow-x: hidden;
+}
+
+.loaders {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  width: 480px;
+  height: 270px;
+  background-color: #bbbbbb;
+  color: #fff;
+  margin-right: 20px;
+}
+.mainBar__cards {
+  margin-top: 40px;
+}
+
+.mainBar__cards h1 {
+  margin-bottom: 20px;
+}
+
+.mainBar__images {
+  display: flex;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  overflow-x: scroll;
+}
+
+.mainBar__images::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.mainBar__images::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.mainBar__images::-webkit-scrollbar-thumb {
+  background: #614494;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1512px) {
+  .mainBar__images::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainBar {
+    flex: 1;
+  }
+
+  .loader__three {
+    display: none;
+  }
+
+  .mainBar__images::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainBar {
+    flex: 1;
+  }
+
+  .loader__two,
+  .loader__three {
+    display: none;
+  }
+
+  .mainBar__images {
+    height: 200px;
+    overflow-y: hidden;
+  }
+
+  .mainBar__images img {
+    width: 320px;
+    height: 100%;
+  }
+
+  .mainBar__images::-webkit-scrollbar {
+    display: none;
+  }
+}

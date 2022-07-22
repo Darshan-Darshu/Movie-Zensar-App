@@ -1,0 +1,40 @@
+.movieImage {
+  display: flex;
+  justify-content: center;
+  flex: 0.8;
+}
+
+.movieImage form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.movieImage form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieImage form div label {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.movieImage form div input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #a7a7a7;
+  outline: none;
+}
+
+.movieImage form button {
+  width: 80px;
+  font-size: 15px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  background-color: #3e7a94;
+  color: #fff;
+  cursor: pointer;
+}

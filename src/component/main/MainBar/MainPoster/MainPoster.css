@@ -1,0 +1,23 @@
+.mainPoster img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainPoster img {
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 498px) and (max-width: 768px) {
+  .mainPoster img {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 498px) {
+  .mainPoster img {
+    height: 25vh;
+  }
+}

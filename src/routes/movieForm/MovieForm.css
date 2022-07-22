@@ -1,0 +1,100 @@
+.movieForm {
+  flex: 0.8;
+  height: calc(100vh - 81px);
+  padding: 30px;
+}
+
+.movieForm h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.movieForm form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.movieForm form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieForm form div label {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.movieForm form div input,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #a7a7a7;
+  outline: none;
+}
+
+.movieForm form div select {
+  font-size: 14px;
+  width: 50%;
+  background-color: #fff;
+}
+.movieForm form button {
+  width: 80px;
+  font-size: 15px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  background-color: #3e7a94;
+  color: #fff;
+  cursor: pointer;
+}
+
+.movieForm form button:hover {
+  background-color: #53c1c1;
+  color: #111;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .movieForm {
+    flex: 1;
+  }
+
+  .movieForm form button {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 498px) and (max-width: 768px) {
+  .movieForm h1 {
+    font-size: 3rem;
+  }
+  .movieForm form {
+    width: 100%;
+  }
+
+  .movieForm form button {
+    margin-bottom: 50px;
+  }
+
+  .movieForm form {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 498px) {
+  .movieForm h1 {
+    font-size: 2.5rem;
+  }
+  .movieForm form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .movieForm form button {
+    margin-bottom: 50px;
+  }
+}

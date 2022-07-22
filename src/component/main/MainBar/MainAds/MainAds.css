@@ -1,0 +1,80 @@
+.mainAds {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.mainAds__image img {
+  width: 400px;
+  height: 600px;
+}
+
+.mainAds__info {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.mainAds__info h1 {
+  margin-top: 10px;
+}
+
+.mainAds__info .genre {
+  margin: 20px 0;
+}
+
+.mainAds__info button {
+  width: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3479a1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.mainAds__info .description {
+  margin: 20px 0;
+  line-height: 1.5;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .mainAds {
+    flex-direction: column;
+  }
+
+  .mainAds__image img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mainAds__info {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .mainAds__info p {
+    margin-top: 5px;
+  }
+
+  .mainAds__info .genre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .mainAds__info button {
+    margin: 0 auto;
+  }
+}

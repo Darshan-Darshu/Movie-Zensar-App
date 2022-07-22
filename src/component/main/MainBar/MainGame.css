@@ -1,0 +1,19 @@
+.mainGame {
+  margin-right: 20px;
+  position: relative;
+}
+
+.hoverGame {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 270px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hoverGame:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
