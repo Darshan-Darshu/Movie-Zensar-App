@@ -43,8 +43,26 @@ main {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1280px) {
-  .sidebar {
-    display: none;
+@media screen and (min-width: 648px) and (max-width: 1280px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .allmovie {
+    flex: 1;
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .movieImage {
+    flex: 1;
+    min-height: 30vh;
   }
 }

@@ -114,9 +114,7 @@ function MovieImage() {
 
   return (
     <main>
-      <div className='sidebar'>
-        <Sidebar />
-      </div>
+      <Sidebar />
       <div className='movieImage'>
         <form onSubmit={submitMovie}>
           <div>
