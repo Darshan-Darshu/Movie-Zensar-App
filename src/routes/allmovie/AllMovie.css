@@ -63,7 +63,7 @@
   .allmovie {
     margin: 10px;
     flex: 1;
-    min-height: 60vh;
+    min-height: 50vh;
   }
 
   .allmovie__container h2 {
@@ -87,7 +87,7 @@
   .allmovie {
     margin: 10px;
     flex: 1;
-    min-height: 60vh;
+    min-height: 30vh;
   }
 
   .allmovie h1 {
