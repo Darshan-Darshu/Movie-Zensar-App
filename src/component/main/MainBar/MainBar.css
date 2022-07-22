@@ -1,11 +1,11 @@
 .mainBar {
   flex: 0.8;
-  margin: 10px 30px;
   overflow-x: hidden;
 }
 
 .loaders {
   display: flex;
+  margin: 10px 30px;
   /* justify-content: space-between; */
 }
 
@@ -21,7 +21,8 @@
   margin-right: 20px;
 }
 .mainBar__cards {
-  margin-top: 40px;
+  margin: 10px 30px;
+  margin-top: 20px;
 }
 
 .mainBar__cards h1 {
