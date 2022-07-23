@@ -31,6 +31,8 @@ function MainPoster() {
     if (randomNumber === 0) {
       return setPoster(randomNumber + 2);
     }
+
+    setPoster(randomNumber);
   }, [posters.length]);
 
   return (
