@@ -24,7 +24,13 @@ function MainPoster() {
   ];
 
   useEffect(() => {
-    setPoster(Math.floor(Math.random() * posters.length));
+    const randomNumber = Math.floor(
+      Math.random() * (posters.length - 1)
+    );
+
+    if (randomNumber === 0) {
+      return setPoster(randomNumber + 2);
+    }
   }, [posters.length]);
 
   return (

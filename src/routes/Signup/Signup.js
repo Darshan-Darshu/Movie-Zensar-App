@@ -14,7 +14,6 @@ function Signup() {
 
   const submitCreateUser = (e) => {
     e.preventDefault();
-    setDisabled(true);
 
     console.log(username, email, password);
 
@@ -29,6 +28,8 @@ function Signup() {
 
   const createUserDb = async (data) => {
     try {
+      setDisabled(true);
+
       const response = await fetch(
         `${process.env.REACT_APP_SERVER_API}/users`,
         {
@@ -48,15 +49,18 @@ function Signup() {
 
       dispatch(userData.user);
       navigate("/");
+      setDisabled(false);
     } catch (err) {
       alert(
         "Some Error maybe user is already created are check ones"
       );
+      setDisabled(false);
     }
   };
 
   return (
     <div className='signup'>
+      {disabled && <h2>Loading...</h2>}
       <form
         onSubmit={submitCreateUser}
         autoComplete={"off"}>

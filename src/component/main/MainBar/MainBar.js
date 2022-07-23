@@ -101,6 +101,44 @@ function MainBar() {
         </div>
       )}
       <MainAds />
+      {loading ? (
+        <div className='loaders'>
+          <div className='loader'>
+            <h1>Loading....</h1>
+          </div>
+          <div className='loader loader__two'>
+            <h1>Loading....</h1>
+          </div>
+          <div className='loader loader__three'>
+            <h1>Loading....</h1>
+          </div>
+        </div>
+      ) : (
+        <div
+          className='mainBar__cards'
+          style={{
+            marginTop: "40px",
+          }}>
+          <h1>Recommended</h1>
+
+          <div className='mainBar__images'>
+            {games &&
+              games.map((game, index) =>
+                index > 11 && index < 20 ? (
+                  <MainGame
+                    id={game._id}
+                    key={game._id}
+                    name={game.name}
+                    genre={game.genre}
+                    rating={game.rating}
+                  />
+                ) : (
+                  ""
+                )
+              )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

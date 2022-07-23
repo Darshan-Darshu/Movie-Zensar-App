@@ -113,7 +113,7 @@ function Update() {
           </div>
 
           <div>
-            <label htmlFor='rating'>Rating</label>
+            <label htmlFor='rating'>Rating (1 - 100)</label>
             <input
               type='number'
               id='rating'

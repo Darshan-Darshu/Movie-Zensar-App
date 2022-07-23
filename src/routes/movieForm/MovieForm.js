@@ -5,9 +5,9 @@ import "./MovieForm.css";
 
 function MovieForm() {
   const [name, setName] = useState();
-  const [genre, setGenre] = useState();
+  const [genre, setGenre] = useState("action");
   const [rating, setRating] = useState();
-  const [language, setLanguage] = useState();
+  const [language, setLanguage] = useState("kannada");
   const [production, setProduction] = useState();
   const navigate = useNavigate();
 
@@ -42,7 +42,7 @@ function MovieForm() {
           </div>
 
           <div>
-            <label htmlFor='rating'>Rating</label>
+            <label htmlFor='rating'>Rating (1- 100)</label>
             <input
               type='number'
               id='rating'
@@ -66,8 +66,8 @@ function MovieForm() {
             <label htmlFor='genre'>Genre</label>
             <select
               id='genre'
-              onChange={(e) => setGenre(e.target.value)}>
-              <option value=''>---Select----</option>
+              onChange={(e) => setGenre(e.target.value)}
+              required>
               <option value='action'>Action</option>
               <option value='romantic'>Romantic</option>
               <option value='drama'>Dramantic</option>
