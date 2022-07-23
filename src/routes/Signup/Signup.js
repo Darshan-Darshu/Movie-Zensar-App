@@ -23,6 +23,8 @@ function Signup() {
       password,
     };
 
+    setPassword("");
+
     createUserDb(data);
   };
 

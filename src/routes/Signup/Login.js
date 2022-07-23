@@ -19,6 +19,8 @@ function Login() {
       password,
     };
 
+    setPassword("");
+
     loginUserDb(data);
   };
 
