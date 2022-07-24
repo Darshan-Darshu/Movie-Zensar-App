@@ -17,7 +17,7 @@ function MainPoster() {
 
   useEffect(() => {
     setPoster(Math.floor(Math.random() * posters.length));
-  }, [MAX_RATING, MIN_RATING]);
+  }, []);
 
   console.log(poster, posters[poster]);
 
