@@ -15,7 +15,7 @@ function MainPoster() {
     "https://metadata-static.plex.tv/7/gracenote/73d5176ec2a15afb58d6d6317319e1e7.jpg",
   ];
   const MIN_RATING = 0;
-  const MAX_RATING = posters.length - 1;
+  const MAX_RATING = posters.length;
 
   useEffect(() => {
     setPoster(
