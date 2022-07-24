@@ -14,15 +14,9 @@ function MainPoster() {
     "https://b-static.besthdwallpaper.com/the-batman-2022-movie-cast-wallpaper-3840x2160-89759_54.jpg",
     "https://metadata-static.plex.tv/7/gracenote/73d5176ec2a15afb58d6d6317319e1e7.jpg",
   ];
-  const MIN_RATING = 0;
-  const MAX_RATING = posters.length;
 
   useEffect(() => {
-    setPoster(
-      Math.floor(
-        Math.random() * (MAX_RATING - MIN_RATING + 1)
-      ) + MIN_RATING
-    );
+    setPoster(Math.floor(Math.random() * posters.length));
   }, [MAX_RATING, MIN_RATING]);
 
   console.log(poster, posters[poster]);
